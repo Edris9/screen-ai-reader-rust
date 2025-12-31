@@ -1,5 +1,11 @@
-D:\rust\screen-ai-reader\target\release\deps\screen_ai.d: src\main.rs
+D:\rust\screen-ai-reader\target\release\deps\screen_ai.d: src\main.rs src\app.rs src\capture.rs src\ui\mod.rs src\ui\toolbox.rs src\ui\selecting.rs src\ui\popup.rs
 
-D:\rust\screen-ai-reader\target\release\deps\screen_ai.exe: src\main.rs
+D:\rust\screen-ai-reader\target\release\deps\screen_ai.exe: src\main.rs src\app.rs src\capture.rs src\ui\mod.rs src\ui\toolbox.rs src\ui\selecting.rs src\ui\popup.rs
 
 src\main.rs:
+src\app.rs:
+src\capture.rs:
+src\ui\mod.rs:
+src\ui\toolbox.rs:
+src\ui\selecting.rs:
+src\ui\popup.rs:
