@@ -7,20 +7,34 @@ const ACCENT: Color32 = Color32::from_rgb(0, 120, 212);
 const TEXT_PRIMARY: Color32 = Color32::from_rgb(255, 255, 255);
 const TEXT_SECONDARY: Color32 = Color32::from_rgb(180, 180, 180);
 
+
 #[derive(PartialEq, Clone)]
 enum ModelMode {
     Local,
     Online,
 }
+#[derive(PartialEq, Clone, Debug)]
+enum OnlineProvider {
+    Anthropic,
+    OpenAI,
+    GroqCloude,
+    Grok,
+}
 
 struct App {
     model_mode: ModelMode,
+    online_provider: OnlineProvider,
+    api_key: String,
+    show_online_popup: bool,
 }
 
 impl Default for App {
     fn default() -> Self {
         Self {
             model_mode: ModelMode::Local,
+            online_provider: OnlineProvider::Anthropic,
+            api_key: String::new(),
+            show_online_popup: false,
         }
     }
 }
@@ -63,7 +77,7 @@ impl eframe::App for App {
                             .rounding(4.0)
                             .min_size(Vec2::new(70.0, 32.0))
                     ).clicked() {
-                        self.model_mode = ModelMode::Online;
+                        self.show_online_popup = true;
                     }
                     
                     ui.separator();
@@ -89,6 +103,53 @@ impl eframe::App for App {
                     }
                 });
             });
+        
+        // Online provider popup
+        if self.show_online_popup {
+            egui::Window::new("Välj Online Modell")
+                .collapsible(false)
+                .resizable(false)
+                .anchor(egui::Align2::CENTER_CENTER, [0.0, 0.0])
+                .frame(egui::Frame::default().fill(BG_DARK).inner_margin(15.0).rounding(8.0))
+                .show(ctx, |ui| {
+                    ui.label(RichText::new("Välj leverantör:").color(TEXT_PRIMARY));
+                    ui.add_space(8.0);
+                    
+                    ui.horizontal(|ui| {
+                        if ui.selectable_label(self.online_provider == OnlineProvider::Anthropic, "Anthropic").clicked() {
+                            self.online_provider = OnlineProvider::Anthropic;
+                        }
+                        if ui.selectable_label(self.online_provider == OnlineProvider::OpenAI, "OpenAI").clicked() {
+                            self.online_provider = OnlineProvider::OpenAI;
+                        }
+                        if ui.selectable_label(self.online_provider == OnlineProvider::GroqCloude, "Groq").clicked() {
+                            self.online_provider = OnlineProvider::GroqCloude;
+                        }
+                        if ui.selectable_label(self.online_provider == OnlineProvider::Grok, "Grok").clicked() {
+                            self.online_provider = OnlineProvider::Grok;
+                        }
+                    });
+                    
+                    ui.add_space(10.0);
+                    ui.label(RichText::new("API Nyckel:").color(TEXT_SECONDARY));
+                    ui.add(egui::TextEdit::singleline(&mut self.api_key)
+                        .password(true)
+                        .desired_width(250.0)
+                        .hint_text("Skriv din API nyckel här..."));
+                    
+                    ui.add_space(15.0);
+                    ui.horizontal(|ui| {
+                        if ui.button("Spara").clicked() {
+                            self.model_mode = ModelMode::Online;
+                            self.show_online_popup = false;
+                            println!("Sparade: {:?} med nyckel", self.online_provider);
+                        }
+                        if ui.button("Avbryt").clicked() {
+                            self.show_online_popup = false;
+                        }
+                    });
+                });
+        }
     }
 }
 
