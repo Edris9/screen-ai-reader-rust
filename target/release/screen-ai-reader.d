@@ -1,0 +1,1 @@
+D:\rust\screen-ai-reader\target\release\screen-ai-reader.exe: D:\rust\screen-ai-reader\src\ai.rs D:\rust\screen-ai-reader\src\capture.rs D:\rust\screen-ai-reader\src\config.rs D:\rust\screen-ai-reader\src\main.rs
