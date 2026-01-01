@@ -59,19 +59,26 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                         let crop_h = (rect.height() * pixels_per_point) as u32;
 
                         // Se till att vi inte kraschar om vi är utanför bildens gränser
+                        // ... inuti drag_released blocket i src/ui/selecting.rs
+
                         if crop_w > 0 && crop_h > 0 {
                             let cropped = img.crop_imm(crop_x, crop_y, crop_w, crop_h);
-                            app.screenshot = Some(cropped); // Spara den beskurna bilden
-                            app.screenshot_texture = None;  // Tvinga omladdning av texturen
+                            app.screenshot = Some(cropped);
+                            app.screenshot_texture = None;
                             
-                            // Här skulle du byta state till "Analysis" eller liknande
-                            // För nu går vi tillbaka till toolbox eller visar resultatet
-                            println!("Bild beskuren: {}x{}", crop_w, crop_h);
-                            
-                            // Återställ fönstret till normal storlek (ej fullscreen)
+                            // Gå ur fullskärm
                             ctx.send_viewport_cmd(egui::ViewportCommand::Fullscreen(false));
-                            // För demo, gå tillbaka till toolbox (eller en ny 'Result' state)
-                            app.state = AppState::Toolbox; 
+                            
+                            // --- NYTT: Justera fönsterstorlek automatiskt ---
+                            // Vi sätter bredden till bildens bredd (men minst 420px så menyn får plats)
+                            // Vi sätter höjden till bildens höjd + lite extra för menyn
+                            let new_width = (crop_w as f32 + 20.0).max(450.0).min(1200.0); 
+                            let new_height = (crop_h as f32 + 80.0).max(200.0).min(900.0);
+                            
+                            ctx.send_viewport_cmd(egui::ViewportCommand::InnerSize([new_width, new_height].into()));
+                            
+                            // Gå tillbaka till toolbox
+                            app.state = AppState::Toolbox;
                         }
                     }
                 }

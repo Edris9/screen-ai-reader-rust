@@ -1,6 +1,7 @@
 pub mod toolbox;
 pub mod selecting;
 pub mod popup;
+pub mod chatsidebar;
 
 use eframe::egui::Color32;
 
