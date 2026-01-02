@@ -1,8 +1,12 @@
+// ... (imports)
 use eframe::egui::{self, Pos2, TextureHandle};
 use image::DynamicImage;
-use crate::ui;
+use std::time::Instant;
+use crate::{ui, capture};
 
-// En enkel struktur för ett meddelande
+// ... (ChatMessage, AppState, ModelMode, OnlineProvider structs/enums är samma som förut) ...
+// (Kopiera in dem om du ersätter hela filen, men här visar jag ändringarna i App structen)
+
 #[derive(Clone)]
 pub struct ChatMessage {
     pub is_user: bool,
@@ -39,15 +43,18 @@ pub struct App {
     pub api_key: String,
     pub show_online_popup: bool,
     
-    // Bildhantering
     pub screenshot: Option<DynamicImage>,
     pub screenshot_texture: Option<TextureHandle>,
     pub selection_start: Option<Pos2>,
     pub selection_current: Option<Pos2>,
 
-    // --- NYTT FÖR CHATTEN ---
     pub chat_input: String,
     pub chat_history: Vec<ChatMessage>,
+    
+    // --- NYTT FÄLT ---
+    pub show_chat: bool, // Håller reda på om chatten är öppen eller stängd
+    
+    pub capture_delay: Option<Instant>, 
 }
 
 impl Default for App {
@@ -62,29 +69,54 @@ impl Default for App {
             screenshot_texture: None,
             selection_start: None,
             selection_current: None,
-            // Initiera chatten
             chat_input: String::new(),
             chat_history: vec![
-                ChatMessage { is_user: false, text: "Hej! Jag ser bilden. Vad vill du veta?".to_string() }
+                ChatMessage { is_user: false, text: "Hej! Vad vill du göra?".to_string() }
             ],
+            // Vi visar chatten som standard när appen startar (eller sätt false om du vill)
+            show_chat: true, 
+            capture_delay: None, 
         }
     }
 }
 
 impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        
+        // Timer Logic (Samma som förut)
+        if let Some(deadline) = self.capture_delay {
+            if Instant::now() > deadline {
+                if let Some(img) = capture::take_screenshot() {
+                    self.screenshot = Some(img);
+                    self.screenshot_texture = None;
+                    self.selection_start = None;
+                    self.selection_current = None;
+                    self.state = AppState::Selecting;
+                    
+                    // --- NYTT: Öppna alltid chatten automatiskt när vi tar en ny bild ---
+                    self.show_chat = true; 
+                }
+                self.capture_delay = None;
+                ctx.send_viewport_cmd(egui::ViewportCommand::Minimized(false));
+                ctx.send_viewport_cmd(egui::ViewportCommand::Visible(true));
+                ctx.send_viewport_cmd(egui::ViewportCommand::Fullscreen(true));
+                ctx.send_viewport_cmd(egui::ViewportCommand::Focus);
+                ctx.request_repaint();
+            } else {
+                ctx.request_repaint(); 
+                return;
+            }
+        }
+
         match self.state {
             AppState::Selecting => {
-                // När vi klipper, visa bara selecting UI
                 ui::selecting::render(self, ctx);
             }
             AppState::Toolbox => {
-                // 1. Om vi har en bild, visa Sidebaren FÖRST (till höger)
-                if self.screenshot.is_some() {
+                // --- NYTT: Visa bara sidebar om vi har bild OCH show_chat är true ---
+                if self.screenshot.is_some() && self.show_chat {
                     ui::chatsidebar::render(self, ctx);
                 }
-                
-                // 2. Visa sedan Toolbox/Huvudpanelen
                 ui::toolbox::render(self, ctx);
             }
         }
