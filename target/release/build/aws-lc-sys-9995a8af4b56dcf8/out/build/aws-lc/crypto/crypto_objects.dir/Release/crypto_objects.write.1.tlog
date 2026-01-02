@@ -1,0 +1,12 @@
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\chacha\chacha-x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\chacha-x86_64.obj
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\cipher_extra\chacha20_poly1305_x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\chacha20_poly1305_x86_64.obj
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\cipher_extra\aes128gcmsiv-x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\aes128gcmsiv-x86_64.obj
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\cipher_extra\aesni-sha1-x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\aesni-sha1-x86_64.obj
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\cipher_extra\aesni-sha256-x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\aesni-sha256-x86_64.obj
+^D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\test\trampoline-x86_64.asm
+D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\aws-lc\crypto\crypto_objects.dir\Release\trampoline-x86_64.obj

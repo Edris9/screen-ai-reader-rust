@@ -1,7 +1,9 @@
+// Registrera alla dina UI-filer här
 pub mod toolbox;
 pub mod selecting;
 pub mod popup;
-pub mod chatsidebar;
+pub mod chatsidebar; // <--- Denna saknades!
+pub mod local_llm;   // <--- Denna saknades också!
 
 use eframe::egui::Color32;
 

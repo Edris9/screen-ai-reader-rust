@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\rust\screen-ai-reader\target\release\build\aws-lc-sys-9995a8af4b56dcf8\out\build\CMakeFiles\64bbc00b633d2cb606bd115a23eba93f\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9281B13-A7D5-38C5-AAF6-D246F0B1D643}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

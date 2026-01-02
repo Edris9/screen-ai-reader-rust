@@ -50,6 +50,10 @@ pub struct App {
 
     pub chat_input: String,
     pub chat_history: Vec<ChatMessage>,
+
+    pub local_models: Vec<String>,
+    pub selected_local_model: String,
+    pub ollama_error: Option<String>,
     
     // --- NYTT FÄLT ---
     pub show_chat: bool, // Håller reda på om chatten är öppen eller stängd
@@ -69,6 +73,9 @@ impl Default for App {
             screenshot_texture: None,
             selection_start: None,
             selection_current: None,
+            local_models: Vec::new(),
+            selected_local_model: String::new(),
+            ollama_error: None,
             chat_input: String::new(),
             chat_history: vec![
                 ChatMessage { is_user: false, text: "Hej! Vad vill du göra?".to_string() }
@@ -108,17 +115,17 @@ impl eframe::App for App {
             }
         }
 
-        match self.state {
-            AppState::Selecting => {
-                ui::selecting::render(self, ctx);
-            }
-            AppState::Toolbox => {
-                // --- NYTT: Visa bara sidebar om vi har bild OCH show_chat är true ---
-                if self.screenshot.is_some() && self.show_chat {
-                    ui::chatsidebar::render(self, ctx);
+            match self.state {
+                AppState::Selecting => {
+                    ui::selecting::render(self, ctx);
                 }
-                ui::toolbox::render(self, ctx);
+                AppState::Toolbox => {
+                    // --- NYTT: Visa bara sidebar om vi har bild OCH show_chat är true ---
+                    if self.screenshot.is_some() && self.show_chat {
+                        ui::chatsidebar::render(self, ctx);
+                    }
+                    ui::toolbox::render(self, ctx);
+                }
             }
-        }
     }
 }

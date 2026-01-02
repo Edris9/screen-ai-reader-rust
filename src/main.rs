@@ -1,8 +1,10 @@
 mod app;
 mod capture;
 mod ui;
+mod ollama;
 
 use app::App;
+
 
 fn main() -> eframe::Result<()> {
     let options = eframe::NativeOptions {
@@ -13,6 +15,8 @@ fn main() -> eframe::Result<()> {
             .with_title("Screen AI"),
         ..Default::default()
     };
+
+    
     
     eframe::run_native(
         "Screen AI",

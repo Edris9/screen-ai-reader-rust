@@ -1,12 +1,1322 @@
-   0.429256300s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: stale: changed "D:\\rust\\screen-ai-reader\\src\\ui\\chatsidebar.rs"
-   0.429297800s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:           (vs) "D:\\rust\\screen-ai-reader\\target\\debug\\.fingerprint\\screen-ai-04127c584ebf87f2\\dep-bin-screen-ai"
-   0.429303800s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13411791330, nanos: 399657200 } < FileTime { seconds: 13411791339, nanos: 562457000 }
-   0.429561300s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: fingerprint dirty for screen-ai v0.1.0 (D:\rust\screen-ai-reader)/Check { test: false }/TargetInner { name: "screen-ai", doc: true, ..: with_path("D:\\rust\\screen-ai-reader\\src\\main.rs", Edition2021) }
-   0.429590300s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\rust\\screen-ai-reader\\target\\debug\\.fingerprint\\screen-ai-04127c584ebf87f2\\dep-bin-screen-ai", reference_mtime: FileTime { seconds: 13411791330, nanos: 399657200 }, stale: "D:\\rust\\screen-ai-reader\\src\\ui\\chatsidebar.rs", stale_mtime: FileTime { seconds: 13411791339, nanos: 562457000 } }))
-   0.500746800s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: stale: changed "D:\\rust\\screen-ai-reader\\src\\ui\\chatsidebar.rs"
-   0.500769200s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:           (vs) "D:\\rust\\screen-ai-reader\\target\\debug\\.fingerprint\\screen-ai-b1c5454abdef881a\\dep-test-bin-screen-ai"
-   0.500774500s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13411791330, nanos: 399657200 } < FileTime { seconds: 13411791339, nanos: 562457000 }
-   0.500875800s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: fingerprint dirty for screen-ai v0.1.0 (D:\rust\screen-ai-reader)/Check { test: true }/TargetInner { name: "screen-ai", doc: true, ..: with_path("D:\\rust\\screen-ai-reader\\src\\main.rs", Edition2021) }
-   0.500891000s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\rust\\screen-ai-reader\\target\\debug\\.fingerprint\\screen-ai-b1c5454abdef881a\\dep-test-bin-screen-ai", reference_mtime: FileTime { seconds: 13411791330, nanos: 399657200 }, stale: "D:\\rust\\screen-ai-reader\\src\\ui\\chatsidebar.rs", stale_mtime: FileTime { seconds: 13411791339, nanos: 562457000 } }))
+warning: unused manifest key: profile.release.reqwest
+warning: unused manifest key: profile.release.serde
+warning: unused manifest key: profile.release.serde_json
+   0.785171300s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: fingerprint error for screen-ai v0.1.0 (D:\rust\screen-ai-reader)/Check { test: false }/TargetInner { name: "screen-ai", doc: true, ..: with_path("D:\\rust\\screen-ai-reader\\src\\main.rs", Edition2021) }
+   0.785231000s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\screen-ai-949292bf0a328309\bin-screen-ai`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.803667400s  INFO prepare_target{force=false package_id=eframe v0.29.1 target="eframe"}: cargo::core::compiler::fingerprint: fingerprint error for eframe v0.29.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("eframe", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\eframe-0.29.1\\src\\lib.rs", Edition2021) }
+   0.803950400s  INFO prepare_target{force=false package_id=eframe v0.29.1 target="eframe"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\eframe-8c7b2b72a0dd701a\lib-eframe`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.879445200s  INFO prepare_target{force=false package_id=egui-winit v0.29.1 target="egui_winit"}: cargo::core::compiler::fingerprint: fingerprint error for egui-winit v0.29.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("egui_winit", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\egui-winit-0.29.1\\src\\lib.rs", Edition2021) }
+   0.879486000s  INFO prepare_target{force=false package_id=egui-winit v0.29.1 target="egui_winit"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\egui-winit-f34076e597773239\lib-egui_winit`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.935043000s  INFO prepare_target{force=false package_id=arboard v3.6.1 target="arboard"}: cargo::core::compiler::fingerprint: fingerprint error for arboard v3.6.1/Check { test: false }/TargetInner { ..: lib_target("arboard", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\arboard-3.6.1\\src\\lib.rs", Edition2021) }
+   0.935075100s  INFO prepare_target{force=false package_id=arboard v3.6.1 target="arboard"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\arboard-b4a1d5a0b594e735\lib-arboard`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.936351300s  INFO prepare_target{force=false package_id=windows-sys v0.60.2 target="windows_sys"}: cargo::core::compiler::fingerprint: fingerprint error for windows-sys v0.60.2/Check { test: false }/TargetInner { tested: false, doctest: false, ..: lib_target("windows_sys", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\windows-sys-0.60.2\\src\\lib.rs", Edition2021) }
+   0.936387900s  INFO prepare_target{force=false package_id=windows-sys v0.60.2 target="windows_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\windows-sys-f5e53b26470fa45f\lib-windows_sys`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.941295600s  INFO prepare_target{force=false package_id=webbrowser v1.0.6 target="webbrowser"}: cargo::core::compiler::fingerprint: fingerprint error for webbrowser v1.0.6/Check { test: false }/TargetInner { ..: lib_target("webbrowser", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\webbrowser-1.0.6\\src\\lib.rs", Edition2021) }
+   0.941332000s  INFO prepare_target{force=false package_id=webbrowser v1.0.6 target="webbrowser"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\webbrowser-4837e5f289901f94\lib-webbrowser`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.942231100s  INFO prepare_target{force=false package_id=url v2.5.7 target="url"}: cargo::core::compiler::fingerprint: fingerprint error for url v2.5.7/Check { test: false }/TargetInner { ..: lib_target("url", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\url-2.5.7\\src\\lib.rs", Edition2018) }
+   0.942264300s  INFO prepare_target{force=false package_id=url v2.5.7 target="url"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\url-ed351aafa55bf6d0\lib-url`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.053865800s  INFO prepare_target{force=false package_id=image v0.25.9 target="image"}: cargo::core::compiler::fingerprint: fingerprint error for image v0.25.9/Check { test: false }/TargetInner { ..: lib_target("image", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\image-0.25.9\\src\\lib.rs", Edition2021) }
+   1.053899500s  INFO prepare_target{force=false package_id=image v0.25.9 target="image"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\image-48c62a815765b4a4\lib-image`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.078870800s  INFO prepare_target{force=false package_id=ravif v0.12.0 target="ravif"}: cargo::core::compiler::fingerprint: fingerprint error for ravif v0.12.0/Check { test: false }/TargetInner { ..: lib_target("ravif", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ravif-0.12.0\\src\\lib.rs", Edition2021) }
+   1.078904400s  INFO prepare_target{force=false package_id=ravif v0.12.0 target="ravif"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\ravif-866276b831bdb468\lib-ravif`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.080209100s  INFO prepare_target{force=false package_id=rav1e v0.8.1 target="rav1e"}: cargo::core::compiler::fingerprint: fingerprint error for rav1e v0.8.1/Check { test: false }/TargetInner { benched: false, ..: lib_target("rav1e", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rav1e-0.8.1\\src\\lib.rs", Edition2021) }
+   1.080239800s  INFO prepare_target{force=false package_id=rav1e v0.8.1 target="rav1e"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\rav1e-07996a7ccd4d1656\lib-rav1e`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.093815000s  INFO prepare_target{force=false package_id=av1-grain v0.2.5 target="av1_grain"}: cargo::core::compiler::fingerprint: fingerprint error for av1-grain v0.2.5/Check { test: false }/TargetInner { ..: lib_target("av1_grain", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\av1-grain-0.2.5\\src\\lib.rs", Edition2021) }
+   1.093879200s  INFO prepare_target{force=false package_id=av1-grain v0.2.5 target="av1_grain"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\av1-grain-9425b143862c63f1\lib-av1_grain`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   1.095363000s  INFO prepare_target{force=false package_id=nom v8.0.0 target="nom"}: cargo::core::compiler::fingerprint: fingerprint error for nom v8.0.0/Check { test: false }/TargetInner { ..: lib_target("nom", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\nom-8.0.0\\src\\lib.rs", Edition2021) }
+   1.095402700s  INFO prepare_target{force=false package_id=nom v8.0.0 target="nom"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\nom-b45ee5fc187db453\lib-nom`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_libgit2_prerelease
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: git_midx_writer_dump
+  23: git_filter_source_repo
+  24: git_midx_writer_dump
+  25: BaseThreadInitThunk
+  26: RtlUserThreadStart
+   1.096442100s  INFO prepare_target{force=false package_id=memchr v2.7.6 target="memchr"}: cargo::core::compiler::fingerprint: fingerprint error for memchr v2.7.6/Check { test: false }/TargetInner { benched: false, ..: lib_target("memchr", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\memchr-2.7.6\\src\\lib.rs", Edition2021) }
+   1.096500100s  INFO prepare_target{force=false package_id=memchr v2.7.6 target="memchr"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\memchr-55c022c43325fcbe\lib-memchr`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_filter_source_repo
+  18: git_libgit2_prerelease
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: <unknown>
+  23: git_midx_writer_dump
+  24: git_filter_source_repo
+  25: git_midx_writer_dump
+  26: BaseThreadInitThunk
+  27: RtlUserThreadStart
+   1.097790400s  INFO prepare_target{force=false package_id=bitstream-io v4.9.0 target="bitstream_io"}: cargo::core::compiler::fingerprint: fingerprint error for bitstream-io v4.9.0/Check { test: false }/TargetInner { ..: lib_target("bitstream_io", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\bitstream-io-4.9.0\\src\\lib.rs", Edition2018) }
+   1.097827100s  INFO prepare_target{force=false package_id=bitstream-io v4.9.0 target="bitstream_io"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\bitstream-io-c59805fd7339cd01\lib-bitstream_io`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   1.098750500s  INFO prepare_target{force=false package_id=core2 v0.4.0 target="core2"}: cargo::core::compiler::fingerprint: fingerprint error for core2 v0.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("core2", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\core2-0.4.0\\src\\lib.rs", Edition2018) }
+   1.098792800s  INFO prepare_target{force=false package_id=core2 v0.4.0 target="core2"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\core2-88bce8ca4f95f682\lib-core2`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_libgit2_prerelease
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: git_midx_writer_dump
+  23: git_filter_source_repo
+  24: git_midx_writer_dump
+  25: BaseThreadInitThunk
+  26: RtlUserThreadStart
+   1.107627700s  INFO prepare_target{force=false package_id=reqwest v0.13.1 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint error for reqwest v0.13.1/Check { test: false }/TargetInner { ..: lib_target("reqwest", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\reqwest-0.13.1\\src\\lib.rs", Edition2021) }
+   1.107698400s  INFO prepare_target{force=false package_id=reqwest v0.13.1 target="reqwest"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\reqwest-9e63fa123a562fe0\lib-reqwest`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   1.156756700s  INFO prepare_target{force=false package_id=futures-channel v0.3.31 target="futures_channel"}: cargo::core::compiler::fingerprint: fingerprint error for futures-channel v0.3.31/Check { test: false }/TargetInner { ..: lib_target("futures_channel", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\futures-channel-0.3.31\\src\\lib.rs", Edition2018) }
+   1.156851800s  INFO prepare_target{force=false package_id=futures-channel v0.3.31 target="futures_channel"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\futures-channel-323a5dde9405597f\lib-futures_channel`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.184157900s  INFO prepare_target{force=false package_id=futures-util v0.3.31 target="futures_util"}: cargo::core::compiler::fingerprint: fingerprint error for futures-util v0.3.31/Check { test: false }/TargetInner { ..: lib_target("futures_util", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\futures-util-0.3.31\\src\\lib.rs", Edition2018) }
+   1.184200500s  INFO prepare_target{force=false package_id=futures-util v0.3.31 target="futures_util"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\futures-util-5349b575704e6267\lib-futures_util`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.184935100s  INFO prepare_target{force=false package_id=futures-io v0.3.31 target="futures_io"}: cargo::core::compiler::fingerprint: fingerprint error for futures-io v0.3.31/Check { test: false }/TargetInner { ..: lib_target("futures_io", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\futures-io-0.3.31\\src\\lib.rs", Edition2018) }
+   1.184966100s  INFO prepare_target{force=false package_id=futures-io v0.3.31 target="futures_io"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\futures-io-d3418349c82013a0\lib-futures_io`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.221927400s  INFO prepare_target{force=false package_id=h2 v0.4.12 target="h2"}: cargo::core::compiler::fingerprint: fingerprint error for h2 v0.4.12/Check { test: false }/TargetInner { ..: lib_target("h2", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\h2-0.4.12\\src\\lib.rs", Edition2021) }
+   1.221969300s  INFO prepare_target{force=false package_id=h2 v0.4.12 target="h2"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\h2-e4b3f6ffa8d9b03b\lib-h2`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.305556900s  INFO prepare_target{force=false package_id=tokio v1.48.0 target="tokio"}: cargo::core::compiler::fingerprint: fingerprint error for tokio v1.48.0/Check { test: false }/TargetInner { ..: lib_target("tokio", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tokio-1.48.0\\src\\lib.rs", Edition2021) }
+   1.305588300s  INFO prepare_target{force=false package_id=tokio v1.48.0 target="tokio"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\tokio-1e86d598a80174fd\lib-tokio`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.306700900s  INFO prepare_target{force=false package_id=mio v1.1.1 target="mio"}: cargo::core::compiler::fingerprint: fingerprint error for mio v1.1.1/Check { test: false }/TargetInner { ..: lib_target("mio", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\mio-1.1.1\\src\\lib.rs", Edition2021) }
+   1.306732700s  INFO prepare_target{force=false package_id=mio v1.1.1 target="mio"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\mio-3abab2563ccf8331\lib-mio`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.307610300s  INFO prepare_target{force=false package_id=windows-sys v0.61.2 target="windows_sys"}: cargo::core::compiler::fingerprint: fingerprint error for windows-sys v0.61.2/Check { test: false }/TargetInner { tested: false, doctest: false, ..: lib_target("windows_sys", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\windows-sys-0.61.2\\src\\lib.rs", Edition2021) }
+   1.307646900s  INFO prepare_target{force=false package_id=windows-sys v0.61.2 target="windows_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\windows-sys-4ba5b6c690692720\lib-windows_sys`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   1.308428600s  INFO prepare_target{force=false package_id=socket2 v0.6.1 target="socket2"}: cargo::core::compiler::fingerprint: fingerprint error for socket2 v0.6.1/Check { test: false }/TargetInner { ..: lib_target("socket2", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\socket2-0.6.1\\src\\lib.rs", Edition2021) }
+   1.308459300s  INFO prepare_target{force=false package_id=socket2 v0.6.1 target="socket2"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\socket2-030e9f1b376285ae\lib-socket2`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.309174600s  INFO prepare_target{force=false package_id=tokio-util v0.7.17 target="tokio_util"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-util v0.7.17/Check { test: false }/TargetInner { ..: lib_target("tokio_util", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tokio-util-0.7.17\\src\\lib.rs", Edition2021) }
+   1.309204400s  INFO prepare_target{force=false package_id=tokio-util v0.7.17 target="tokio_util"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\tokio-util-b1ac8d87e3632f73\lib-tokio_util`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.333796700s  INFO prepare_target{force=false package_id=hyper v1.8.1 target="hyper"}: cargo::core::compiler::fingerprint: fingerprint error for hyper v1.8.1/Check { test: false }/TargetInner { ..: lib_target("hyper", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\hyper-1.8.1\\src\\lib.rs", Edition2021) }
+   1.333852000s  INFO prepare_target{force=false package_id=hyper v1.8.1 target="hyper"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\hyper-5d7b27198933ecaf\lib-hyper`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.370112900s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.7 target="hyper_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-rustls v0.27.7/Check { test: false }/TargetInner { ..: lib_target("hyper_rustls", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\hyper-rustls-0.27.7\\src\\lib.rs", Edition2021) }
+   1.370159600s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.7 target="hyper_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\hyper-rustls-70f155757687415e\lib-hyper_rustls`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.371300700s  INFO prepare_target{force=false package_id=hyper-util v0.1.19 target="hyper_util"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-util v0.1.19/Check { test: false }/TargetInner { ..: lib_target("hyper_util", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\hyper-util-0.1.19\\src\\lib.rs", Edition2021) }
+   1.371335300s  INFO prepare_target{force=false package_id=hyper-util v0.1.19 target="hyper_util"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\hyper-util-037c1e4bbd5d7fe1\lib-hyper_util`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.436331800s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.23.35/Check { test: false }/TargetInner { ..: lib_target("rustls", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-0.23.35\\src\\lib.rs", Edition2021) }
+   1.436371700s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\rustls-1277e0276b9ba821\lib-rustls`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.438709300s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.2 target="aws_lc_rs"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-rs v1.15.2/Check { test: false }/TargetInner { ..: lib_target("aws_lc_rs", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-rs-1.15.2\\src\\lib.rs", Edition2021) }
+   1.438791100s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.2 target="aws_lc_rs"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\aws-lc-rs-39caaf38fef56a30\lib-aws_lc_rs`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.445523100s  INFO prepare_target{force=false package_id=aws-lc-sys v0.35.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-sys v0.35.0/Check { test: false }/TargetInner { ..: lib_target("aws_lc_sys", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.35.0\\src\\lib.rs", Edition2021) }
+   1.445586500s  INFO prepare_target{force=false package_id=aws-lc-sys v0.35.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\aws-lc-sys-471b31dd48c252e8\lib-aws_lc_sys`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   1.472853700s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.8 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-webpki v0.103.8/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-webpki-0.103.8\\src\\lib.rs", Edition2021) }
+   1.472900600s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.8 target="webpki"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\rustls-webpki-54e05829dc1b8902\lib-webpki`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.473936900s  INFO prepare_target{force=false package_id=untrusted v0.9.0 target="untrusted"}: cargo::core::compiler::fingerprint: fingerprint error for untrusted v0.9.0/Check { test: false }/TargetInner { ..: lib_target("untrusted", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\untrusted-0.9.0\\src\\lib.rs", Edition2018) }
+   1.473974200s  INFO prepare_target{force=false package_id=untrusted v0.9.0 target="untrusted"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\untrusted-b42edf6c738eccda\lib-untrusted`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   1.475082600s  INFO prepare_target{force=false package_id=subtle v2.6.1 target="subtle"}: cargo::core::compiler::fingerprint: fingerprint error for subtle v2.6.1/Check { test: false }/TargetInner { ..: lib_target("subtle", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\subtle-2.6.1\\src\\lib.rs", Edition2018) }
+   1.475118800s  INFO prepare_target{force=false package_id=subtle v2.6.1 target="subtle"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\subtle-0549f0e8d2e07d7f\lib-subtle`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   1.475708900s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-rustls v0.26.4/Check { test: false }/TargetInner { ..: lib_target("tokio_rustls", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tokio-rustls-0.26.4\\src\\lib.rs", Edition2021) }
+   1.475733000s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\tokio-rustls-93828360ed9cafa5\lib-tokio_rustls`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.487546600s  INFO prepare_target{force=false package_id=rustls-platform-verifier v0.6.2 target="rustls_platform_verifier"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-platform-verifier v0.6.2/Check { test: false }/TargetInner { ..: lib_target("rustls_platform_verifier", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-platform-verifier-0.6.2\\src\\lib.rs", Edition2021) }
+   1.487579100s  INFO prepare_target{force=false package_id=rustls-platform-verifier v0.6.2 target="rustls_platform_verifier"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\rustls-platform-verifier-ac58d7513aa56502\lib-rustls_platform_verifier`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.488601200s  INFO prepare_target{force=false package_id=serde_json v1.0.148 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.148/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.148\\src\\lib.rs", Edition2021) }
+   1.488648800s  INFO prepare_target{force=false package_id=serde_json v1.0.148 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\serde_json-da0728c06fb7b6d2\lib-serde_json`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.490560700s  INFO prepare_target{force=false package_id=zmij v1.0.7 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.7/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zmij-1.0.7\\src\\lib.rs", Edition2021) }
+   1.490608300s  INFO prepare_target{force=false package_id=zmij v1.0.7 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\zmij-71033a8aa84d9657\lib-zmij`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   1.503487300s  INFO prepare_target{force=false package_id=tower v0.5.2 target="tower"}: cargo::core::compiler::fingerprint: fingerprint error for tower v0.5.2/Check { test: false }/TargetInner { ..: lib_target("tower", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tower-0.5.2\\src\\lib.rs", Edition2018) }
+   1.503528900s  INFO prepare_target{force=false package_id=tower v0.5.2 target="tower"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\tower-88ce61a4f902f5a8\lib-tower`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.515447700s  INFO prepare_target{force=false package_id=tower-http v0.6.8 target="tower_http"}: cargo::core::compiler::fingerprint: fingerprint error for tower-http v0.6.8/Check { test: false }/TargetInner { ..: lib_target("tower_http", ["lib"], "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tower-http-0.6.8\\src\\lib.rs", Edition2018) }
+   1.515495100s  INFO prepare_target{force=false package_id=tower-http v0.6.8 target="tower_http"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\tower-http-faf79c3bf7e83caf\lib-tower_http`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   1.552329000s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint: fingerprint error for screen-ai v0.1.0 (D:\rust\screen-ai-reader)/Check { test: true }/TargetInner { name: "screen-ai", doc: true, ..: with_path("D:\\rust\\screen-ai-reader\\src\\main.rs", Edition2021) }
+   1.552364400s  INFO prepare_target{force=false package_id=screen-ai v0.1.0 (D:\rust\screen-ai-reader) target="screen-ai"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\rust\screen-ai-reader\target\debug\.fingerprint\screen-ai-2cf889f074772544\test-bin-screen-ai`
+
+Caused by:
+    Det går inte att hitta filen. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking memchr v2.7.6
+    Checking windows-sys v0.61.2
+    Checking windows-sys v0.60.2
+    Checking aws-lc-sys v0.35.0
+    Checking untrusted v0.9.0
+    Checking futures-io v0.3.31
+    Checking subtle v2.6.1
+    Checking url v2.5.7
+    Checking futures-channel v0.3.31
+    Checking zmij v1.0.7
+    Checking futures-util v0.3.31
+    Checking nom v8.0.0
+    Checking core2 v0.4.0
+    Checking serde_json v1.0.148
+    Checking bitstream-io v4.9.0
+    Checking webbrowser v1.0.6
+    Checking aws-lc-rs v1.15.2
+    Checking rustls-webpki v0.103.8
+    Checking rustls v0.23.35
+    Checking socket2 v0.6.1
+    Checking arboard v3.6.1
+    Checking egui-winit v0.29.1
+    Checking av1-grain v0.2.5
+    Checking rav1e v0.8.1
+    Checking mio v1.1.1
+    Checking rustls-platform-verifier v0.6.2
+    Checking tokio v1.48.0
+    Checking ravif v0.12.0
+    Checking image v0.25.9
+    Checking tokio-util v0.7.17
+    Checking tower v0.5.2
+    Checking tokio-rustls v0.26.4
+    Checking h2 v0.4.12
+    Checking tower-http v0.6.8
+    Checking eframe v0.29.1
+    Checking hyper v1.8.1
+    Checking hyper-util v0.1.19
+    Checking hyper-rustls v0.27.7
+    Checking reqwest v0.13.1
     Checking screen-ai v0.1.0 (D:\rust\screen-ai-reader)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.89s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 17.95s
