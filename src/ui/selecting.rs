@@ -1,4 +1,4 @@
-use eframe::egui::{self, Color32, Rect, Shape, Stroke};
+use eframe::egui::{self, Color32, Rect, Stroke};
 use crate::app::{App, AppState};
 
 pub fn render(app: &mut App, ctx: &egui::Context) {
@@ -43,7 +43,7 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
             }
 
             // Släpp musen -> KLART
-            if response.drag_released() {
+            if response.drag_stopped() {
                 if let (Some(start), Some(end)) = (app.selection_start, app.selection_current) {
                     // Skapa rektangel
                     let rect = Rect::from_two_pos(start, end);

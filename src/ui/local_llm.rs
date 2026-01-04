@@ -25,7 +25,7 @@ pub fn render(app: &mut App, ui: &mut egui::Ui) {
                     // Visa dropdown
                     ui.horizontal(|ui| {
                         ui.label("Modell:");
-                        egui::ComboBox::from_id_source("ollama_selector")
+                        egui::ComboBox::from_id_salt("ollama_selector")
                             .selected_text(&app.selected_local_model)
                             .show_ui(ui, |ui| {
                                 for model in &app.local_models {

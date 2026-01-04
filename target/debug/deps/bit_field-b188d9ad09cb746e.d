@@ -1,5 +1,0 @@
-D:\rust\screen-ai-reader\target\debug\deps\bit_field-b188d9ad09cb746e.d: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bit_field-0.10.3\src\lib.rs
-
-D:\rust\screen-ai-reader\target\debug\deps\libbit_field-b188d9ad09cb746e.rmeta: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bit_field-0.10.3\src\lib.rs
-
-C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bit_field-0.10.3\src\lib.rs:

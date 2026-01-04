@@ -1,4 +1,4 @@
-use eframe::egui::{self, Pos2, TextureHandle, Color32}; // <--- Se till att Color32 är med
+use eframe::egui::{self, Pos2, TextureHandle}; // <--- Se till att Color32 är med
 use image::DynamicImage;
 use std::time::Instant;
 use std::sync::mpsc::{channel, Receiver, Sender};
