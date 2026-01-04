@@ -174,95 +174,69 @@ HOST_CMAKE = None
 CMAKE = Some("cmake")
 Not searching for unused variables given on the command line.
 -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26200.
--- The C compiler identification is MSVC 19.44.35219.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
 -- ENABLE_PRE_SONAME_BUILD: ON
 -- PERFORM_SONAME_BUILD: 0
 -- Entropy source configured: Dynamic (default: CPU Jitter)
 -- Go not found. Disabling some code generation and using pre-generated code in generated-src/
 -- Perl not found. Disabling some code generation and using pre-generated code in generated-src/
 -- Prefix build configured: performing build using prefix "aws_lc_0_35_0_" and headers path "C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-lc-sys-0.35.0\generated-include"
--- Performing Test HAVE_C_FLAG__Wshadow
--- Performing Test HAVE_C_FLAG__Wshadow - Failed
--- The ASM_NASM compiler identification is MSVC
--- Found assembler: C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/builder/prebuilt-nasm.bat
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - not found
--- Found Threads: TRUE
--- Configuring done (10.1s)
--- Generating done (0.2s)
+-- Configuring done (0.6s)
+-- Generating done (3.5s)
 -- Build files have been written to: D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build
 MSBuild version 17.14.23+b0019275e for .NET Framework
 
   1>Checking Build System
-  Building Custom Rule C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/aws-lc/CMakeLists.txt
   Building Custom Rule C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/aws-lc/crypto/CMakeLists.txt
-  Building Custom Rule C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/aws-lc/third_party/jitterentropy/CMakeLists.txt
   Assembling chacha-x86_64.asm
   Building Custom Rule C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/aws-lc/crypto/fipsmodule/CMakeLists.txt
   Assembling aesni-gcm-avx512.asm
-  jitterentropy-base.c
-  jitterentropy-gcd.c
+  jitterentropy.vcxproj -> D:\rust\screen-ai-reader\target\debug\build\aws-lc-sys-1fefe1fd4e6bab99\out\build\aws-lc\third_party\jitterentropy\jitterentropy.dir\Debug\jitterentropy.lib
   Assembling aesni-gcm-x86_64.asm
   Assembling chacha20_poly1305_x86_64.asm
-  jitterentropy-health.c
   Assembling aesni-xts-avx512.asm
   Assembling aes128gcmsiv-x86_64.asm
-  Assembling aesni-sha1-x86_64.asm
   Assembling aesni-x86_64.asm
-  jitterentropy-noise.c
-  Assembling aesni-sha256-x86_64.asm
+  Assembling aesni-sha1-x86_64.asm
   Assembling ghash-ssse3-x86_64.asm
   Assembling ghash-x86_64.asm
-  Assembling trampoline-x86_64.asm
-  jitterentropy-sha3.c
+  Assembling aesni-sha256-x86_64.asm
   Assembling md5-x86_64.asm
-  jitterentropy-timer.c
+  Assembling trampoline-x86_64.asm
   Assembling p256-x86_64-asm.asm
   Assembling p256_beeu-x86_64-asm.asm
-  Generating Code...
-  a_bitstr.c
   Assembling rdrand-x86_64.asm
   Assembling rsaz-avx2.asm
+  Assembling rsaz-2k-avx512.asm
+  a_bitstr.c
+  Assembling rsaz-3k-avx512.asm
+  Assembling rsaz-4k-avx512.asm
+  Assembling sha1-x86_64.asm
   a_bool.c
   a_d2i_fp.c
-  a_dup.c
-  Assembling rsaz-2k-avx512.asm
-  a_gentm.c
-  jitterentropy.vcxproj -> D:\rust\screen-ai-reader\target\debug\build\aws-lc-sys-1fefe1fd4e6bab99\out\build\aws-lc\third_party\jitterentropy\jitterentropy.dir\Debug\jitterentropy.lib
-  Assembling rsaz-3k-avx512.asm
-  a_i2d_fp.c
-  Assembling rsaz-4k-avx512.asm
-  a_int.c
-  Assembling sha1-x86_64.asm
-  a_mbstr.c
   Assembling sha256-x86_64.asm
+  a_dup.c
+  a_gentm.c
   Assembling sha512-x86_64.asm
-  a_object.c
   Assembling vpaes-x86_64.asm
   Assembling x86_64-mont5.asm
+  a_i2d_fp.c
+  a_int.c
   Assembling x86_64-mont.asm
+  a_mbstr.c
+  bcm.c
+  a_object.c
   a_octet.c
   a_strex.c
   a_strnid.c
-  bcm.c
   a_time.c
   a_type.c
+  fips_shared_support.c
+  cpucap.c
+  Generating Code...
   a_utctm.c
   a_utf8.c
   asn1_lib.c
   asn1_par.c
-  fips_shared_support.c
-  cpucap.c
-  Generating Code...
   asn_pack.c
   f_int.c
   Generating Code...
@@ -270,9 +244,9 @@ MSBuild version 17.14.23+b0019275e for .NET Framework
   f_string.c
   tasn_dec.c
   tasn_enc.c
+  fipsmodule.vcxproj -> D:\rust\screen-ai-reader\target\debug\build\aws-lc-sys-1fefe1fd4e6bab99\out\build\aws-lc\crypto\fipsmodule\fipsmodule.dir\Debug\fipsmodule.lib
   tasn_fre.c
   tasn_new.c
-  fipsmodule.vcxproj -> D:\rust\screen-ai-reader\target\debug\build\aws-lc-sys-1fefe1fd4e6bab99\out\build\aws-lc\crypto\fipsmodule\fipsmodule.dir\Debug\fipsmodule.lib
   tasn_typ.c
   tasn_utl.c
   posix_time.c

@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 2026-01-02 03:14:23.
+      Build started 2026-01-04 21:49:34.
       
       Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.87
+      Time Elapsed 00:00:00.88
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -72,8 +72,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-pj5dhk"
-      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-pj5dhk"
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-fj9i74"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-fj9i74"
     cmakeVariables:
       CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
       CMAKE_C_FLAGS_DEBUG: " -nologo -MD -Brepro -W0"
@@ -83,37 +83,37 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-pj5dhk'
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-fj9i74'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c5566.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_945e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-01-02 03:14:25.
+        Build started 2026-01-04 21:49:36.
         
-        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pj5dhk\\cmTC_c5566.vcxproj" on node 1 (default targets).
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fj9i74\\cmTC_945e6.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c5566.dir\\Debug\\".
+          Creating directory "cmTC_945e6.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pj5dhk\\Debug\\".
-          Creating directory "cmTC_c5566.dir\\Debug\\cmTC_c5566.tlog\\".
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fj9i74\\Debug\\".
+          Creating directory "cmTC_945e6.dir\\Debug\\cmTC_945e6.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c5566.dir\\Debug\\cmTC_c5566.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c5566.dir\\Debug\\cmTC_c5566.tlog\\unsuccessfulbuild".
+          Creating "cmTC_945e6.dir\\Debug\\cmTC_945e6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_945e6.dir\\Debug\\cmTC_945e6.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c5566.dir\\Debug\\\\" /Fd"cmTC_c5566.dir\\Debug\\vc143.pdb" /external:W0 /Gd /TC /errorReport:queue  -Brepro -Brepro "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_945e6.dir\\Debug\\\\" /Fd"cmTC_945e6.dir\\Debug\\vc143.pdb" /external:W0 /Gd /TC /errorReport:queue  -Brepro -Brepro "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pj5dhk\\Debug\\cmTC_c5566.exe" /INCREMENTAL /ILK:"cmTC_c5566.dir\\Debug\\cmTC_c5566.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-pj5dhk/Debug/cmTC_c5566.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-pj5dhk/Debug/cmTC_c5566.lib" /MACHINE:X64  /machine:x64 cmTC_c5566.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c5566.vcxproj -> D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pj5dhk\\Debug\\cmTC_c5566.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fj9i74\\Debug\\cmTC_945e6.exe" /INCREMENTAL /ILK:"cmTC_945e6.dir\\Debug\\cmTC_945e6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-fj9i74/Debug/cmTC_945e6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-fj9i74/Debug/cmTC_945e6.lib" /MACHINE:X64  /machine:x64 cmTC_945e6.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_945e6.vcxproj -> D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fj9i74\\Debug\\cmTC_945e6.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c5566.dir\\Debug\\cmTC_c5566.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c5566.dir\\Debug\\cmTC_c5566.tlog\\cmTC_c5566.lastbuildstate".
-        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pj5dhk\\cmTC_c5566.vcxproj" (default targets).
+          Deleting file "cmTC_945e6.dir\\Debug\\cmTC_945e6.tlog\\unsuccessfulbuild".
+          Touching "cmTC_945e6.dir\\Debug\\cmTC_945e6.tlog\\cmTC_945e6.lastbuildstate".
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fj9i74\\cmTC_945e6.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.65
+        Time Elapsed 00:00:01.80
         
       exitCode: 0
   -
@@ -155,8 +155,8 @@ events:
     checks:
       - "Performing Test HAVE_C_FLAG__Wshadow"
     directories:
-      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3zuxp1"
-      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3zuxp1"
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-l9ht1i"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-l9ht1i"
     cmakeVariables:
       CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0 -utf-8 -Wall -WX  -wd4061 -wd4100 -wd4127 -wd4146 -wd4200 -wd4204 -wd4221 -wd4242 -wd4244 -wd4267 -wd4291 -wd4296 -wd4371 -wd4388 -wd4350 -wd4365 -wd4389 -wd4464 -wd4510 -wd4512 -wd4514 -wd4548 -wd4571 -wd4610 -wd4623 -wd4625 -wd4626 -wd4628 -wd4668 -wd4706 -wd4710 -wd4711 -wd4800 -wd4820 -wd5026 -wd5027 -wd5039 -wd5045 -wd4255 -wd4152 -wd4295 -wd4701 -wd4505 -wd4702 -wd4191 -wd4996 -wd4746 -wd5264 -wd5266 -wd5267  -w44265"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -165,36 +165,267 @@ events:
       variable: "HAVE_C_FLAG__Wshadow"
       cached: true
       stdout: |
-        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3zuxp1'
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-l9ht1i'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f1420.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8f1a8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-01-02 03:14:27.
+        Build started 2026-01-04 21:49:39.
         
-        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\cmTC_f1420.vcxproj" on node 1 (default targets).
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\cmTC_8f1a8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f1420.dir\\Debug\\".
+          Creating directory "cmTC_8f1a8.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\Debug\\".
-          Creating directory "cmTC_f1420.dir\\Debug\\cmTC_f1420.tlog\\".
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\Debug\\".
+          Creating directory "cmTC_8f1a8.dir\\Debug\\cmTC_8f1a8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f1420.dir\\Debug\\cmTC_f1420.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f1420.dir\\Debug\\cmTC_f1420.tlog\\unsuccessfulbuild".
+          Creating "cmTC_8f1a8.dir\\Debug\\cmTC_8f1a8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8f1a8.dir\\Debug\\cmTC_8f1a8.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D HAVE_C_FLAG__Wshadow /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1420.dir\\Debug\\\\" /Fd"cmTC_f1420.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 -Wshadow "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\src.c"
-        cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\cmTC_f1420.vcxproj]
-        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\cmTC_f1420.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D HAVE_C_FLAG__Wshadow /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8f1a8.dir\\Debug\\\\" /Fd"cmTC_8f1a8.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 -Wshadow "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\src.c"
+        cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\cmTC_8f1a8.vcxproj]
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\cmTC_8f1a8.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\cmTC_f1420.vcxproj" (default target) (1) ->
+        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\cmTC_8f1a8.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zuxp1\\cmTC_f1420.vcxproj]
+          cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9ht1i\\cmTC_8f1a8.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.36
+        Time Elapsed 00:00:00.73
+        
+      exitCode: 1
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1243 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "aws-lc/crypto/CMakeLists.txt:130 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      
+      D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdASM_NASM>REM -- Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. 
+      
+      D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdASM_NASM>REM -- SPDX-License-Identifier: Apache-2.0 OR ISC 
+      PATH: C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64;D:\\rust\\screen-ai-reader\\target\\debug\\deps;D:\\rust\\screen-ai-reader\\target\\debug;C:\\Users\\Edris\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib;C:\\Users\\Edris\\.cargo\\bin;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\libnvvp;c:\\Users\\Edris\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Program Files\\Google\\Chrome\\Application;;;;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Tesseract-OCR;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Edris\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.1.1\\bin;;C:\\Program Files\\Tesser;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Go\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2023.1.0\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Edris\\.local\\bin;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Edris\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Edris\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.1.1\\bin;;C:\\Program Files\\Tesseract-OCR;C:\\Users\\Edris\\AppData\\Local\\Programs\\Ollama;C:\\Users\\Edris\\AppData\\Roaming\\npm;C:\\Users\\Edris\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Users\\Edris\\go\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\lib\\x64;C:\\ffmpeg;C:\\Users\\Edris\\.dotnet\\tools;C:\\Users\\Edris\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin 
+      FILENAME:  
+      ScriptDir: C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.35.0\\builder 
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1243 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "aws-lc/crypto/CMakeLists.txt:130 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      
+      D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdASM_NASM>REM -- Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. 
+      
+      D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdASM_NASM>REM -- SPDX-License-Identifier: Apache-2.0 OR ISC 
+      PATH: C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64;D:\\rust\\screen-ai-reader\\target\\debug\\deps;D:\\rust\\screen-ai-reader\\target\\debug;C:\\Users\\Edris\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib;C:\\Users\\Edris\\.cargo\\bin;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\libnvvp;c:\\Users\\Edris\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Program Files\\Google\\Chrome\\Application;;;;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Tesseract-OCR;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Edris\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.1.1\\bin;;C:\\Program Files\\Tesser;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\CMake\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Go\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2023.1.0\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Edris\\.local\\bin;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Edris\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Edris\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Edris\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.1.1\\bin;;C:\\Program Files\\Tesseract-OCR;C:\\Users\\Edris\\AppData\\Local\\Programs\\Ollama;C:\\Users\\Edris\\AppData\\Roaming\\npm;C:\\Users\\Edris\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Users\\Edris\\go\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\lib\\x64;C:\\ffmpeg;C:\\Users\\Edris\\.dotnet\\tools;C:\\Users\\Edris\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin 
+      FILENAME:  
+      ScriptDir: C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.35.0\\builder 
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (enable_language)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: -nologo;-MD;-Brepro;-W0
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 2026-01-04 21:49:44.
+      
+      Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.03
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/4.0.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (enable_language)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-j96pjj"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-j96pjj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: " -nologo -MD -Brepro -W0"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-j96pjj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f4d00.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 2026-01-04 21:49:45.
+        
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j96pjj\\cmTC_f4d00.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f4d00.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j96pjj\\Debug\\".
+          Creating directory "cmTC_f4d00.dir\\Debug\\cmTC_f4d00.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f4d00.dir\\Debug\\cmTC_f4d00.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f4d00.dir\\Debug\\cmTC_f4d00.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f4d00.dir\\Debug\\\\" /Fd"cmTC_f4d00.dir\\Debug\\vc143.pdb" /external:W0 /Gd /TC /errorReport:queue  -Brepro -Brepro "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j96pjj\\Debug\\cmTC_f4d00.exe" /INCREMENTAL /ILK:"cmTC_f4d00.dir\\Debug\\cmTC_f4d00.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-j96pjj/Debug/cmTC_f4d00.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-j96pjj/Debug/cmTC_f4d00.lib" /MACHINE:X64  /machine:x64 cmTC_f4d00.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f4d00.vcxproj -> D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j96pjj\\Debug\\cmTC_f4d00.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f4d00.dir\\Debug\\cmTC_f4d00.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f4d00.dir\\Debug\\cmTC_f4d00.tlog\\cmTC_f4d00.lastbuildstate".
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j96pjj\\cmTC_f4d00.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (enable_language)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (enable_language)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35219.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "aws-lc/CMakeLists.txt:41 (check_c_compiler_flag)"
+      - "aws-lc/CMakeLists.txt:712 (add_flag_if_supported)"
+    checks:
+      - "Performing Test HAVE_C_FLAG__Wshadow"
+    directories:
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-20tgkg"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-20tgkg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0 -utf-8 -Wall -WX  -wd4061 -wd4100 -wd4127 -wd4146 -wd4200 -wd4204 -wd4221 -wd4242 -wd4244 -wd4267 -wd4291 -wd4296 -wd4371 -wd4388 -wd4350 -wd4365 -wd4389 -wd4464 -wd4510 -wd4512 -wd4514 -wd4548 -wd4571 -wd4610 -wd4623 -wd4625 -wd4626 -wd4628 -wd4668 -wd4706 -wd4710 -wd4711 -wd4800 -wd4820 -wd5026 -wd5027 -wd5039 -wd5045 -wd4255 -wd4152 -wd4295 -wd4701 -wd4505 -wd4702 -wd4191 -wd4996 -wd4746 -wd5264 -wd5266 -wd5267  -w44265"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAVE_C_FLAG__Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-20tgkg'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2baa3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 2026-01-04 21:49:47.
+        
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\cmTC_2baa3.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2baa3.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\Debug\\".
+          Creating directory "cmTC_2baa3.dir\\Debug\\cmTC_2baa3.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2baa3.dir\\Debug\\cmTC_2baa3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2baa3.dir\\Debug\\cmTC_2baa3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D HAVE_C_FLAG__Wshadow /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2baa3.dir\\Debug\\\\" /Fd"cmTC_2baa3.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 -Wshadow "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\src.c"
+        cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\cmTC_2baa3.vcxproj]
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\cmTC_2baa3.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\cmTC_2baa3.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          cl : command line  error D8021: invalid numeric argument '/Wshadow' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20tgkg\\cmTC_2baa3.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.41
         
       exitCode: 1
   -
@@ -385,8 +616,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-2v3dc6"
-      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-2v3dc6"
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vz1y0a"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vz1y0a"
     cmakeVariables:
       CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0 -utf-8 -Wall -WX  -wd4061 -wd4100 -wd4127 -wd4146 -wd4200 -wd4204 -wd4221 -wd4242 -wd4244 -wd4267 -wd4291 -wd4296 -wd4371 -wd4388 -wd4350 -wd4365 -wd4389 -wd4464 -wd4510 -wd4512 -wd4514 -wd4548 -wd4571 -wd4610 -wd4623 -wd4625 -wd4626 -wd4628 -wd4668 -wd4706 -wd4710 -wd4711 -wd4800 -wd4820 -wd5026 -wd5027 -wd5039 -wd5045 -wd4255 -wd4152 -wd4295 -wd4701 -wd4505 -wd4702 -wd4191 -wd4996 -wd4746 -wd5264 -wd5266 -wd5267  -w44265"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -396,37 +627,37 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-2v3dc6'
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vz1y0a'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9b9ab.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_35328.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-01-02 03:14:28.
+        Build started 2026-01-04 21:49:50.
         
-        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\cmTC_9b9ab.vcxproj" on node 1 (default targets).
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\cmTC_35328.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_9b9ab.dir\\Debug\\".
+          Creating directory "cmTC_35328.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\Debug\\".
-          Creating directory "cmTC_9b9ab.dir\\Debug\\cmTC_9b9ab.tlog\\".
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\Debug\\".
+          Creating directory "cmTC_35328.dir\\Debug\\cmTC_35328.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9b9ab.dir\\Debug\\cmTC_9b9ab.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9b9ab.dir\\Debug\\cmTC_9b9ab.tlog\\unsuccessfulbuild".
+          Creating "cmTC_35328.dir\\Debug\\cmTC_35328.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_35328.dir\\Debug\\cmTC_35328.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9b9ab.dir\\Debug\\\\" /Fd"cmTC_9b9ab.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_35328.dir\\Debug\\\\" /Fd"cmTC_35328.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\src.c"
           src.c
-        D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\cmTC_9b9ab.vcxproj]
-        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\cmTC_9b9ab.vcxproj" (default targets) -- FAILED.
+        D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\cmTC_35328.vcxproj]
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\cmTC_35328.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\cmTC_9b9ab.vcxproj" (default target) (1) ->
+        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\cmTC_35328.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2v3dc6\\cmTC_9b9ab.vcxproj]
+          D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vz1y0a\\cmTC_35328.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.58
+        Time Elapsed 00:00:00.68
         
       exitCode: 1
   -
@@ -439,8 +670,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-xjzn0o"
-      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-xjzn0o"
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-en59v5"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-en59v5"
     cmakeVariables:
       CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0 -utf-8 -Wall -WX  -wd4061 -wd4100 -wd4127 -wd4146 -wd4200 -wd4204 -wd4221 -wd4242 -wd4244 -wd4267 -wd4291 -wd4296 -wd4371 -wd4388 -wd4350 -wd4365 -wd4389 -wd4464 -wd4510 -wd4512 -wd4514 -wd4548 -wd4571 -wd4610 -wd4623 -wd4625 -wd4626 -wd4628 -wd4668 -wd4706 -wd4710 -wd4711 -wd4800 -wd4820 -wd5026 -wd5027 -wd5039 -wd5045 -wd4255 -wd4152 -wd4295 -wd4701 -wd4505 -wd4702 -wd4191 -wd4996 -wd4746 -wd5264 -wd5266 -wd5267  -w44265"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -450,39 +681,39 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-xjzn0o'
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-en59v5'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3b0e5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e92fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-01-02 03:14:29.
+        Build started 2026-01-04 21:49:52.
         
-        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\cmTC_3b0e5.vcxproj" on node 1 (default targets).
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\cmTC_e92fb.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_3b0e5.dir\\Debug\\".
+          Creating directory "cmTC_e92fb.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\Debug\\".
-          Creating directory "cmTC_3b0e5.dir\\Debug\\cmTC_3b0e5.tlog\\".
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\Debug\\".
+          Creating directory "cmTC_e92fb.dir\\Debug\\cmTC_e92fb.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_3b0e5.dir\\Debug\\cmTC_3b0e5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_3b0e5.dir\\Debug\\cmTC_3b0e5.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e92fb.dir\\Debug\\cmTC_e92fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e92fb.dir\\Debug\\cmTC_e92fb.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b0e5.dir\\Debug\\\\" /Fd"cmTC_3b0e5.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e92fb.dir\\Debug\\\\" /Fd"cmTC_e92fb.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\Debug\\cmTC_3b0e5.exe" /INCREMENTAL /ILK:"cmTC_3b0e5.dir\\Debug\\cmTC_3b0e5.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-xjzn0o/Debug/cmTC_3b0e5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-xjzn0o/Debug/cmTC_3b0e5.lib" /MACHINE:X64  /machine:x64 cmTC_3b0e5.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\cmTC_3b0e5.vcxproj]
-        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\cmTC_3b0e5.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\Debug\\cmTC_e92fb.exe" /INCREMENTAL /ILK:"cmTC_e92fb.dir\\Debug\\cmTC_e92fb.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-en59v5/Debug/cmTC_e92fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-en59v5/Debug/cmTC_e92fb.lib" /MACHINE:X64  /machine:x64 cmTC_e92fb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\cmTC_e92fb.vcxproj]
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\cmTC_e92fb.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\cmTC_3b0e5.vcxproj" (default target) (1) ->
+        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\cmTC_e92fb.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xjzn0o\\cmTC_3b0e5.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en59v5\\cmTC_e92fb.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.91
         
       exitCode: 1
   -
@@ -495,8 +726,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3jd7qw"
-      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3jd7qw"
+      source: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vua38h"
+      binary: "D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vua38h"
     cmakeVariables:
       CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0 -utf-8 -Wall -WX  -wd4061 -wd4100 -wd4127 -wd4146 -wd4200 -wd4204 -wd4221 -wd4242 -wd4244 -wd4267 -wd4291 -wd4296 -wd4371 -wd4388 -wd4350 -wd4365 -wd4389 -wd4464 -wd4510 -wd4512 -wd4514 -wd4548 -wd4571 -wd4610 -wd4623 -wd4625 -wd4626 -wd4628 -wd4668 -wd4706 -wd4710 -wd4711 -wd4800 -wd4820 -wd5026 -wd5027 -wd5039 -wd5045 -wd4255 -wd4152 -wd4295 -wd4701 -wd4505 -wd4702 -wd4191 -wd4996 -wd4746 -wd5264 -wd5266 -wd5267  -w44265"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -506,39 +737,39 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3jd7qw'
+        Change Dir: 'D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vua38h'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b3500.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_52745.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-01-02 03:14:30.
+        Build started 2026-01-04 21:49:53.
         
-        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\cmTC_b3500.vcxproj" on node 1 (default targets).
+        Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\cmTC_52745.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_b3500.dir\\Debug\\".
+          Creating directory "cmTC_52745.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\Debug\\".
-          Creating directory "cmTC_b3500.dir\\Debug\\cmTC_b3500.tlog\\".
+          Creating directory "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\Debug\\".
+          Creating directory "cmTC_52745.dir\\Debug\\cmTC_52745.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b3500.dir\\Debug\\cmTC_b3500.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_b3500.dir\\Debug\\cmTC_b3500.tlog\\unsuccessfulbuild".
+          Creating "cmTC_52745.dir\\Debug\\cmTC_52745.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_52745.dir\\Debug\\cmTC_52745.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b3500.dir\\Debug\\\\" /Fd"cmTC_b3500.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /Wall /WX /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52745.dir\\Debug\\\\" /Fd"cmTC_52745.dir\\Debug\\vc143.pdb" /external:W4 /Gd /TC /wd4061 /wd4100 /wd4127 /wd4146 /wd4200 /wd4204 /wd4221 /wd4242 /wd4244 /wd4267 /wd4291 /wd4296 /wd4371 /wd4388 /wd4350 /wd4365 /wd4389 /wd4464 /wd4510 /wd4512 /wd4514 /wd4548 /wd4571 /wd4610 /wd4623 /wd4625 /wd4626 /wd4628 /wd4668 /wd4706 /wd4710 /wd4711 /wd4800 /wd4820 /wd5026 /wd5027 /wd5039 /wd5045 /wd4255 /wd4152 /wd4295 /wd4701 /wd4505 /wd4702 /wd4191 /wd4996 /wd4746 /wd5264 /wd5266 /wd5267 /errorReport:queue  -Brepro -utf-8 -w44265 "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\Debug\\cmTC_b3500.exe" /INCREMENTAL /ILK:"cmTC_b3500.dir\\Debug\\cmTC_b3500.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3jd7qw/Debug/cmTC_b3500.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-3jd7qw/Debug/cmTC_b3500.lib" /MACHINE:X64  /machine:x64 cmTC_b3500.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\cmTC_b3500.vcxproj]
-        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\cmTC_b3500.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\Debug\\cmTC_52745.exe" /INCREMENTAL /ILK:"cmTC_52745.dir\\Debug\\cmTC_52745.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vua38h/Debug/cmTC_52745.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/CMakeFiles/CMakeScratch/TryCompile-vua38h/Debug/cmTC_52745.lib" /MACHINE:X64  /machine:x64 cmTC_52745.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\cmTC_52745.vcxproj]
+        Done Building Project "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\cmTC_52745.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\cmTC_b3500.vcxproj" (default target) (1) ->
+        "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\cmTC_52745.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3jd7qw\\cmTC_b3500.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vua38h\\cmTC_52745.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.56
+        Time Elapsed 00:00:00.82
         
       exitCode: 1
 ...

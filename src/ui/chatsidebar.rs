@@ -26,7 +26,6 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                 ui.set_height(ui.available_height() - 100.0);
                 
                 ScrollArea::vertical().stick_to_bottom(true).show(ui, |ui| {
-                    // VIKTIGT: Vi itererar med 'mut' så vi kan spara texturen i meddelandet
                     for msg in &mut app.chat_history {
                         let (bg_col, align, txt_col) = if msg.is_user {
                             (ACCENT, egui::Align::Max, TEXT_PRIMARY)
@@ -37,31 +36,21 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                         ui.with_layout(egui::Layout::top_down(align), |ui| {
                             egui::Frame::none().fill(bg_col).rounding(8.0).inner_margin(8.0).show(ui, |ui| {
                                 ui.vertical(|ui| {
-                                    // 1. VISA BILD OM DEN FINNS
                                     if let Some(img) = &msg.image {
-                                        // Ladda textur om den inte finns cachad
                                         let texture = msg.texture.get_or_insert_with(|| {
                                             let size = [img.width() as usize, img.height() as usize];
                                             let pixels: Vec<Color32> = img.to_rgba8().pixels()
                                                 .map(|p| Color32::from_rgba_unmultiplied(p[0], p[1], p[2], p[3]))
                                                 .collect();
-                                            ctx.load_texture(
-                                                "chat_history_img", 
-                                                egui::ColorImage { size, pixels }, 
-                                                egui::TextureOptions::default()
-                                            )
+                                            ctx.load_texture("chat_history_img", egui::ColorImage { size, pixels }, egui::TextureOptions::default())
                                         });
 
-                                        // Räkna ut maxbredd så bilden inte spränger chatten
                                         let max_width = 200.0;
                                         let aspect = texture.aspect_ratio();
                                         let size = Vec2::new(max_width, max_width / aspect);
-                                        
                                         ui.image(egui::load::SizedTexture::new(texture.id(), size));
                                         ui.add_space(5.0);
                                     }
-
-                                    // 2. VISA TEXT
                                     if !msg.text.is_empty() {
                                         ui.label(RichText::new(&msg.text).color(txt_col).size(14.0));
                                     }
@@ -70,7 +59,6 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                         });
                         ui.add_space(8.0);
                     }
-                    
                     if app.is_loading {
                         ui.spinner();
                         ui.label("Tänker...");
@@ -100,7 +88,6 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
 
                 ui.horizontal(|ui| {
                     if ui.button("📷").clicked() {
-                        // (Kamera-kod samma som förut...)
                          ctx.send_viewport_cmd(egui::ViewportCommand::Minimized(true));
                         if let Some(img) = capture::take_screenshot_delayed() {
                             app.screenshot = Some(img);
@@ -118,36 +105,38 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                     let send_btn = ui.add_enabled(!app.chat_input.trim().is_empty() && !app.is_loading, 
                         egui::Button::new("Skicka").fill(ACCENT).min_size(Vec2::new(60.0, 26.0)));
                     
-                    // --- LOGIK FÖR ATT SKICKA ---
                     if (send_btn.clicked() || (send_pressed && !app.chat_input.trim().is_empty())) && !app.is_loading {
                         let text = app.chat_input.clone();
                         app.chat_input.clear();
                         
-                        // 1. KLONA BILDEN FÖR HISTORIKEN
-                        // Vi kollar om det finns en screenshot just nu och sparar den i meddelandet
+                        // Spara bilden i historiken (Huvudtråden - detta är OK)
                         let image_for_history = app.screenshot.clone();
 
-                        // 2. LÄGG TILL I HISTORIKEN (MED BILD)
                         app.chat_history.push(ChatMessage { 
                             is_user: true, 
                             text: text.clone(),
-                            image: image_for_history, // Här sparar vi bilden!
+                            image: image_for_history, 
                             texture: None 
                         });
                         
                         app.is_loading = true;
 
-                        // 3. FÖRBERED DATA FÖR TRÅDEN
+                        // Förbered data för tråden
                         let sender = app.chat_sender.clone();
-                        let prompt = text;
                         let model = if app.selected_local_model.is_empty() { "llama3".to_string() } else { app.selected_local_model.clone() };
-                        
-                        // Vi skickar också en kopia av bilden till AI-funktionen
                         let image_for_ai = app.screenshot.clone();
-                        let history = app.chat_history.clone();
+                        
+                        // --- NYTT HÄR: Skapa en enkel historik utan texturer ---
+                        // Vi mappar om Vec<ChatMessage> till Vec<(bool, String)>
+                        let safe_history: Vec<(bool, String)> = app.chat_history
+                            .iter()
+                            .map(|msg| (msg.is_user, msg.text.clone()))
+                            .collect();
 
                         std::thread::spawn(move || {
-                            let result = crate::ollama::send_chat(model, prompt, image_for_ai.as_ref(), &history);
+                            // Vi skickar 'safe_history' istället för app.chat_history
+                            let result = crate::ollama::send_chat(model, image_for_ai.as_ref(), &safe_history);
+                            
                             match result {
                                 Ok(ai_response) => { let _ = sender.send(ai_response); },
                                 Err(err) => { let _ = sender.send(format!("Fel: {}", err)); }

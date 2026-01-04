@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use reqwest::blocking::Client;
 use std::time::Duration;
 use image::DynamicImage;
-use image::ImageFormat; // <--- ÄNDRING 1: Vi använder ImageFormat istället
+use image::ImageFormat; 
 use std::io::Cursor;
 use base64::{Engine as _, engine::general_purpose};
 
@@ -32,7 +32,6 @@ struct OllamaResponseContent {
     content: String,
 }
 
-// Strukturer för Tags (Modell-listan)
 #[derive(Deserialize, Debug)]
 struct OllamaTagResponse {
     models: Vec<OllamaModel>,
@@ -44,54 +43,44 @@ struct OllamaModel {
 
 // Hämta modeller
 pub fn fetch_models() -> Result<Vec<String>, String> {
-    let client = Client::builder()
-        .timeout(Duration::from_secs(2)) // Kort timeout ifall Ollama inte körs
-        .build()
-        .map_err(|e| e.to_string())?;
-
-    let res = client
-        .get("http://localhost:11434/api/tags")
-        .send();
-
+    let client = Client::builder().timeout(Duration::from_secs(2)).build().map_err(|e| e.to_string())?;
+    let res = client.get("http://localhost:11434/api/tags").send();
     match res {
         Ok(response) => {
             if response.status().is_success() {
                 let parsed: OllamaTagResponse = response.json().map_err(|e| e.to_string())?;
-                let names = parsed.models.into_iter().map(|m| m.name).collect();
-                Ok(names)
+                Ok(parsed.models.into_iter().map(|m| m.name).collect())
             } else {
-                Err(format!("Ollama svarade med felkod: {}", response.status()))
+                Err(format!("Felkod: {}", response.status()))
             }
         }
-        Err(_) => {
-            Err("Kunde inte ansluta till Ollama. Körs programmet?".to_string())
-        }
+        Err(_) => Err("Kunde inte ansluta till Ollama.".to_string())
     }
 }
 
 // Skicka chatt
+// ÄNDRING: history tar nu in (bool, String) istället för ChatMessage
+// bool = true om det är user, false om AI
 pub fn send_chat(
     model: String, 
-    prompt: String, 
     image: Option<&DynamicImage>, 
-    history: &Vec<crate::app::ChatMessage>
+    history: &Vec<(bool, String)> 
 ) -> Result<String, String> {
     
     let client = Client::builder().timeout(Duration::from_secs(60)).build().map_err(|e| e.to_string())?;
 
-    // 1. Bygg meddelande-listan
-    let mut messages: Vec<OllamaMessage> = history.iter().map(|msg| {
+    // 1. Bygg meddelande-listan från den enkla historiken
+    let mut messages: Vec<OllamaMessage> = history.iter().map(|(is_user, text)| {
         OllamaMessage {
-            role: if msg.is_user { "user".to_string() } else { "assistant".to_string() },
-            content: msg.text.clone(),
+            role: if *is_user { "user".to_string() } else { "assistant".to_string() },
+            content: text.clone(),
             images: None,
         }
     }).collect();
 
-    // 2. Förbered bilden
+    // 2. Förbered bilden (om den finns)
     let images_list = if let Some(img) = image {
         let mut bytes: Vec<u8> = Vec::new();
-        // ÄNDRING 2: Använd ImageFormat::Png här
         img.write_to(&mut Cursor::new(&mut bytes), ImageFormat::Png)
             .map_err(|_| "Kunde inte behandla bilden".to_string())?;
         
