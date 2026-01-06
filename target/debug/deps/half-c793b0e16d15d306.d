@@ -1,0 +1,13 @@
+D:\rust\screen-ai-reader\target\debug\deps\half-c793b0e16d15d306.d: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat\convert.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch\x86.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\leading_zeros.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\slice.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\vec.rs
+
+D:\rust\screen-ai-reader\target\debug\deps\libhalf-c793b0e16d15d306.rmeta: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat\convert.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch\x86.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\leading_zeros.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\slice.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\vec.rs
+
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\lib.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\bfloat\convert.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\binary16\arch\x86.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\leading_zeros.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\slice.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-2.7.1\src\vec.rs:

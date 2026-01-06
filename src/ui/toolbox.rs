@@ -1,6 +1,7 @@
 use eframe::egui::{self, RichText, Vec2, Color32};
-use crate::app::{App, ModelMode};
+use crate::app::{App, ModelMode, SavedChat, ChatMessage}; // Importera SavedChat
 use super::{BG_DARK, BG_DARKER, ACCENT, TEXT_PRIMARY, TEXT_SECONDARY, popup};
+use chrono::Local; // För datum
 
 pub fn render(app: &mut App, ctx: &egui::Context) {
     egui::CentralPanel::default()
@@ -11,8 +12,47 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                 ui.horizontal(|ui| {
                     ui.spacing_mut().item_spacing = Vec2::new(6.0, 0.0);
                     
-                    // + Nytt
+                    // --- KNAPP: + Nytt (Med spara-logik) ---
                     if ui.add(egui::Button::new(RichText::new("+ Nytt").color(TEXT_PRIMARY).size(13.0)).fill(ACCENT).rounding(4.0).min_size(Vec2::new(70.0, 32.0))).clicked() {
+                        
+                        // 1. Spara nuvarande chatt om den innehåller något vettigt
+                        // (Mer än bara start-meddelandet)
+                        if app.chat_history.len() > 1 {
+                            // Hitta första frågan från användaren för sammanfattning
+                            let summary = app.chat_history.iter()
+                                .find(|m| m.is_user)
+                                .map(|m| {
+                                    // Ta max 30 tecken och lägg till "..."
+                                    let mut s: String = m.text.chars().take(30).collect();
+                                    if m.text.len() > 30 { s.push_str("..."); }
+                                    s
+                                })
+                                .unwrap_or_else(|| "Ny chatt".to_string());
+
+                            // Lägg till i listan
+                            app.saved_chats.push(SavedChat {
+                                timestamp: Local::now(),
+                                summary,
+                                mode: app.model_mode.clone(),
+                                history: app.chat_history.clone(),
+                            });
+                            
+                            // Sortera så nyaste hamnar överst
+                            app.saved_chats.sort_by(|a, b| b.timestamp.cmp(&a.timestamp));
+                        }
+
+                        // 2. Rensa för ny session
+                        app.chat_history = vec![
+                            ChatMessage { 
+                                is_user: false, 
+                                text: "Hej! Vad vill du göra?".to_string(),
+                                image: None,
+                                texture: None
+                            }
+                        ];
+                        app.ollama_error = None;
+                        
+                        // 3. Ta ny bild (som förut)
                         ctx.send_viewport_cmd(egui::ViewportCommand::Minimized(true));
                         app.capture_delay = Some(std::time::Instant::now() + std::time::Duration::from_millis(300));
                         ctx.request_repaint();
@@ -48,12 +88,25 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                     
                     ui.separator();
                     
-                    // Chatt Toggle
-                    let chat_active = app.show_chat && app.screenshot.is_some();
+                    // --- ERSÄTT HELA DET BLOCKET MED DETTA: ---
+
+                    // Chatt / Historik Toggle
+                    // ÄNDRING: Vi kollar inte längre om screenshot finns.
+                    let chat_active = app.show_chat; 
                     let chat_btn_fill = if chat_active { ACCENT } else { BG_DARKER };
                     let chat_btn_text = if chat_active { TEXT_PRIMARY } else { TEXT_SECONDARY };
-                    if ui.add(egui::Button::new(RichText::new("📜").color(chat_btn_text).size(16.0)).fill(chat_btn_fill).rounding(4.0).min_size(Vec2::new(32.0, 32.0))).clicked() {
-                        if app.screenshot.is_some() { app.show_chat = !app.show_chat; }
+
+                    // Byt ikon: Visa "Pratbubbla" om vi är i historiken (för att gå tillbaka), annars "Klocka" (för historik)
+                    let icon = if app.show_history_view { "💬" } else { "🕘" };
+
+                    if ui.add(
+                        egui::Button::new(RichText::new(icon).color(chat_btn_text).size(16.0))
+                            .fill(chat_btn_fill)
+                            .rounding(4.0)
+                            .min_size(Vec2::new(32.0, 32.0))
+                    ).clicked() {
+                        // ÄNDRING: Vi togglar chatten direkt, oavsett om bild finns eller ej
+                        app.show_chat = !app.show_chat;
                     }
                     
                     // Inställningar
@@ -68,29 +121,20 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                     ui.separator();
                 }
 
-                // --- BILDVISNING MED STÄNG-KNAPP (X) ---
-                // Vi använder en flagga för att lösa "Borrow checker"-felet
+                // --- BILDVISNING & RADERING ---
                 let mut should_delete = false;
-
                 if let Some(ref img) = app.screenshot {
                     ui.add_space(5.0);
-                    
-                    // Header ovanför bilden
                     ui.horizontal(|ui| {
                         ui.label(RichText::new("Granskning").strong().color(TEXT_SECONDARY));
                         ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                            
-                            // Ta bort-knappen sätter bara flaggan till true
                             if ui.button(RichText::new("🗑 Ta bort bild").color(Color32::LIGHT_RED).size(12.0))
                                 .on_hover_text("Ta bort bilden och fortsätt chatta med bara text")
                                 .clicked() 
-                            {
-                                should_delete = true; 
-                            }
+                            { should_delete = true; }
                         });
                     });
 
-                    // Scroll-yta för bilden
                     egui::ScrollArea::vertical().show(ui, |ui| {
                         let texture = app.screenshot_texture.get_or_insert_with(|| {
                             let size = [img.width() as usize, img.height() as usize];
@@ -103,13 +147,9 @@ pub fn render(app: &mut App, ctx: &egui::Context) {
                         let available_width = ui.available_width();
                         let aspect = texture.aspect_ratio();
                         let display_size = Vec2::new(available_width, available_width / aspect);
-
                         ui.image(egui::load::SizedTexture::new(texture.id(), display_size));
                     });
                 }
-
-                // --- HÄR UTFÖR VI RADERINGEN ---
-                // Nu har vi slutat "låna" app.screenshot ovan, så nu får vi ändra den!
                 if should_delete {
                     app.screenshot = None;
                     app.screenshot_texture = None;

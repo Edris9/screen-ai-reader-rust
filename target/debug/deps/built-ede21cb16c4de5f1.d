@@ -1,0 +1,10 @@
+D:\rust\screen-ai-reader\target\debug\deps\built-ede21cb16c4de5f1.d: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\environment.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\util.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\../README.md
+
+D:\rust\screen-ai-reader\target\debug\deps\libbuilt-ede21cb16c4de5f1.rlib: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\environment.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\util.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\../README.md
+
+D:\rust\screen-ai-reader\target\debug\deps\libbuilt-ede21cb16c4de5f1.rmeta: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\environment.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\util.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\../README.md
+
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\lib.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\environment.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\util.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\built-0.8.0\src\../README.md:

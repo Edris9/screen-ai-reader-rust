@@ -1,0 +1,12 @@
+running: "cmake" "C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.35.0" "-B" "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build" "-G" "Visual Studio 17 2022" "-Thost=x64" "-Ax64" "-DBUILD_SHARED_LIBS=0" "-DBORINGSSL_PREFIX=aws_lc_0_35_0_" "-DBORINGSSL_PREFIX_HEADERS=C:\\Users\\Edris\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.35.0\\generated-include" "-DBUILD_TESTING=OFF" "-DBUILD_TOOL=OFF" "-DENABLE_SOURCE_MODIFICATION=OFF" "-DBUILD_LIBSSL=OFF" "-DDISABLE_PERL=ON" "-DDISABLE_GO=ON" "-DCMAKE_ASM_NASM_COMPILER=C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/builder/prebuilt-nasm.bat" "-DCMAKE_ASM_NASM_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreaded=" "-DCMAKE_ASM_NASM_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDLL=" "-DCMAKE_ASM_NASM_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDebug=" "-DCMAKE_ASM_NASM_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDebugDLL=" "-DCMAKE_ASM_NASM_COMPILE_OPTIONS_MSVC_DEBUG_INFORMATION_FORMAT_ProgramDatabase=" "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL" "-DCMAKE_C_STANDARD=99" "-DCMAKE_INSTALL_PREFIX=D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out" "-DCMAKE_C_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_C_FLAGS_DEBUG= -nologo -MD -Brepro -W0" "-DCMAKE_CXX_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_CXX_FLAGS_DEBUG= -nologo -MD -Brepro -W0" "-DCMAKE_ASM_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_ASM_FLAGS_DEBUG= -nologo -MD -Brepro -W0" "-DCMAKE_BUILD_TYPE=Debug" "--no-warn-unused-cli"
+CMake Deprecation Warning at aws-lc/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Copying platform assembly files from C:/Users/Edris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.35.0/aws-lc/generated-src/win-x86_64/crypto/ to D:/rust/screen-ai-reader/target/debug/build/aws-lc-sys-1fefe1fd4e6bab99/out/build/aws-lc/crypto
+running: "cmake" "--build" "D:\\rust\\screen-ai-reader\\target\\debug\\build\\aws-lc-sys-1fefe1fd4e6bab99\\out\\build" "--target" "install" "--config" "Debug" "--parallel" "12"

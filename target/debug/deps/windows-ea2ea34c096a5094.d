@@ -1,0 +1,10 @@
+D:\rust\screen-ai-reader\target\debug\deps\windows-ea2ea34c096a5094.d: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows/mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Foundation\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\Gdi\mod.rs
+
+D:\rust\screen-ai-reader\target\debug\deps\libwindows-ea2ea34c096a5094.rmeta: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows/mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Foundation\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\mod.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\Gdi\mod.rs
+
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\lib.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows/mod.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\mod.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Foundation\mod.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\mod.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Graphics\Gdi\mod.rs:

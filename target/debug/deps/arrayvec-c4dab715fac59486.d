@@ -1,0 +1,11 @@
+D:\rust\screen-ai-reader\target\debug\deps\arrayvec-c4dab715fac59486.d: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec_impl.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\array_string.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\char.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\errors.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\utils.rs
+
+D:\rust\screen-ai-reader\target\debug\deps\libarrayvec-c4dab715fac59486.rmeta: C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\lib.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec_impl.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\array_string.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\char.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\errors.rs C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\utils.rs
+
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\lib.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec_impl.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\arrayvec.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\array_string.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\char.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\errors.rs:
+C:\Users\Edris\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arrayvec-0.7.6\src\utils.rs:
