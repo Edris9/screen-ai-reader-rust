@@ -60,6 +60,9 @@ pub struct App {
 
     pub show_chat: bool,
     pub capture_delay: Option<Instant>, 
+
+    // online_models: Vec<String>, // Framtida användning
+    pub selected_online_model: String,
 }
 
 impl Default for App {
@@ -99,6 +102,7 @@ impl Default for App {
             chat_sender: sender,
             chat_receiver: receiver,
             is_loading: false,
+            selected_online_model: String::new(),
         }
     }
 }

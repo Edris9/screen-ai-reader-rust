@@ -4,6 +4,7 @@ pub mod selecting;
 pub mod popup;
 pub mod chatsidebar; // <--- Denna saknades!
 pub mod local_llm;   // <--- Denna saknades också!
+pub mod online_llm;
 
 use eframe::egui::Color32;
 
